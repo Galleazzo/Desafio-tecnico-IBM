@@ -8,7 +8,6 @@ public class BancoIbmApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BancoIbmApplication.class, args);
-		System.out.println("Hello");
 	}
 
 }
