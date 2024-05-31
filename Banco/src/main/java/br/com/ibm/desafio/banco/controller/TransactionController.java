@@ -20,8 +20,8 @@ public class TransactionController {
         return this.transactionService.save(transactionDTO);
     }
 
-    @GetMapping("/getByClientId/{clienteId}")
-    public List<Transaction> getByClientId(@PathVariable Long clientId) {
-        return this.transactionService.listByClient(clientId);
+    @GetMapping("/getByClientId")
+    public List<Transaction> getByClientId(@RequestParam Long id) {
+        return this.transactionService.listByClient(id);
     }
 }
