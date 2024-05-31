@@ -4,8 +4,8 @@
         <div class="mb-3">
             <label for="tipo" class="form-label">Tipo</label>
             <select class="form-control" id="tipo" [(ngModel)]="newTransaction.type" name="type" required>
-                <option [ngValue]="transactionTypes.CREDIT">Crédito</option>
-                <option [ngValue]="transactionTypes.DEBIT">Débito</option>
+                <option [ngValue]="0">Crédito</option>
+                <option [ngValue]="1">Débito</option>
             </select>
         </div>
         <div class="mb-3">

@@ -48,8 +48,14 @@ export class TransactionComponent implements OnInit {
   }
 
   createTransaction(): void {
-    debugger
-    this.transactionService.createTransaction(this.newTransaction).subscribe(() => {
+    const model = {
+      id: null,
+      type: this.newTransaction.type,
+      value: this.newTransaction.value,
+      date: null,
+      clientId: this.clientId
+    }
+    this.transactionService.createTransaction(model).subscribe(() => {
       this.loadTransactions();
       this.newTransaction = new Transaction();
       this.newTransaction.type = TransactionType.CREDIT;
