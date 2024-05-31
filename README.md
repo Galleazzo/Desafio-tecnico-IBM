@@ -1,16 +1,40 @@
-Teste tecnic de desenvolvimento de aplicação web da IBM
-O teste consiste em um banco que simule transações finacneiras de um banco!
+# Teste Técnico de Desenvolvimento de Aplicação Web da IBM
 
-O back end é a pasta "Banco", e o front é o Banco
+O teste consiste em um banco que simule transações financeiras de um banco!
 
-Para rodar o projeto verifique em sua maquina que voce tem uma IDE para rodar o back end e uma para o front end, eu recomendo a IDE intelijj para o back end e o vs code para o front end;
-Link para inteli: https://www.jetbrains.com/
-Link para vs code: https://code.visualstudio.com/download
+O back end está na pasta "Banco", e o front end está na pasta "banco-front-end".
 
-Verifique se voce tem instalado o Java 17 instalado e o node tambem:
-NODE: https://nodejs.org/en/download/package-manager
-JAVA 17: https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+## Passos para rodar o projeto
 
-Agora voce precisa ter o mySQL instalado, baixe o mysql workbacnch: https://dev.mysql.com/downloads/workbench/
+### 1. Pré-requisitos
+- **IDE para o back end**: Recomendo o IntelliJ IDEA. [Baixe aqui](https://www.jetbrains.com/).
+- **IDE para o front end**: Recomendo o VS Code. [Baixe aqui](https://code.visualstudio.com/download).
 
-Maravilha! Agora o é necessario fazer é a trocar o application.properties no java
+### 2. Instalação de dependências
+- **Java 17**: [Baixe aqui](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html).
+- **Node.js**: [Baixe aqui](https://nodejs.org/en/download/package-manager).
+
+### 3. Configuração do Banco de Dados
+Para o banco de dados, utilizei uma conexão MySQL Docker. Caso prefira outra configuração, siga os passos abaixo:
+
+- **MySQL Workbench**: [Baixe aqui](https://dev.mysql.com/downloads/workbench/).
+- Conecte-se a um banco de sua preferência e crie o schema com o comando:
+  ```sql
+  CREATE DATABASE banco_ibm_teste;
+
+### 4. Configuração do Projeto
+1. No projeto back end, configure o arquivo `application.properties` com as credenciais do seu banco de dados MySQL.
+
+### 5. Executar o Projeto
+- **Back end**:
+  1. Importe o projeto na sua IDE (IntelliJ IDEA).
+  2. Instale todas as dependências necessárias.
+
+- **Front end**:
+  1. No diretório do front end, rode os seguintes comandos:
+     ```sh
+     npm install --force
+     npm start
+     ```
+
+Pronto! Agora você deve estar apto a rodar a aplicação.
