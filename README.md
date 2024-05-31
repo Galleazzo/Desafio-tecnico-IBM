@@ -2,6 +2,8 @@
 
 O teste consiste em um banco que simule transações financeiras de um banco!
 
+Clone o repositorio em sua maquina antes de tudo !!!!!
+
 O back end está na pasta "Banco", e o front end está na pasta "banco-front-end".
 
 ## Passos para rodar o projeto
